@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<style>
+    button
+    {
+        border-radius:16px;
+        border:none;
+        padding: 10px;
+        width:54px;
+        margin:4px 2px;
+        cursor:pointer;
+        font-size:16px;
+        color:white;
+        background-color: #1c2833;
+    }
+</style>
+</head>
+<body style="background-color: black; border:auto;">
+    <h2 align="center" style="color:whitesmoke; border:auto;">SIMPLE CALCULATOR</h2>
+    <br><br><br><br>
+    <div class="container text-center">
+        <div class="row"style="border:5px;">
+             <div class="col" style="width:500px;">
+                <input type="number" id="v1">
+             </div>
+             <div class="col">
+                <input type="number" id="v2">
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 id="h1" align="center" style="color:white;"></h1>
+    <br><br><br><br><br><br><br>
+    <div class="container text-center">
+        <div class="row" style="border:5px;">
+            <div class="col">
+                <button style="color:#dc7633;">AC</button>
+            </div>
+            <div class="col">
+                <button style="color:#dc7633;">x </button>
+            </div>
+            <div class="col">
+                <button style="color:#dc7633;">% </button>
+            </div>
+            <div class="col">
+                <button onclick="div()"style="color:#dc7633;">/</button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row" style="border:5px;">
+            <div class="col">
+                <button>7</button>
+            </div>
+            <div class="col">
+                <button>8</button>
+            </div>
+            <div class="col">
+                <button>9</button>
+            </div>
+            <div class="col">
+                <button onclick="mul()" style="color:#dc7633;">*</button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row" style="border:5px;">
+            <div class="col">
+                <button>4</button>
+            </div>
+            <div class="col">
+                <button>5</button>
+            </div>
+            <div class="col">
+                <button>6</button>
+            </div>
+            <div class="col">
+                <button onclick="sub()" style="color:#dc7633;">-</button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row" style="border:5px;">
+            <div class="col">
+                <button>1</button>
+            </div>
+            <div class="col">
+                <button>2</button>
+            </div>
+            <div class="col">
+                <button>3</button>
+            </div>
+            <div class="col">
+                <button onclick="add()" style="color:#dc7633;">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row" style="border:5px;">
+            <div class="col">
+                <button style="color:#dc7633;">swap</button>
+            </div>
+            <div class="col">
+                <button>0</button>
+            </div>
+            <div class="col">
+                <button>.</button>
+            </div>
+            <div class="col">
+                <button style="background-color:#dc7633;">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function add()
+    {
+        let a=Number(document.getElementById("v1").value);
+        let b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a+b;
+    }
+    function sub()
+    {
+        let a=Number(document.getElementById("v1").value);
+        let b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a-b;
+    }
+    function mul()
+    {
+        let a=Number(document.getElementById("v1").value);
+        let b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a*b;
+    }
+    function div()
+    {
+        let a=Number(document.getElementById("v1").value);
+        let b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a/b;
+    }
+</script>
+</html>
