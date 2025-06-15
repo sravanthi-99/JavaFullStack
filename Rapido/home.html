@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<style>
+  .navbar-brand
+  {
+    text-align: center;
+    font-weight:1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    background-color:#f1c40f;
+    width:150px;
+    padding:10px;
+    border-radius:10px;
+    margin-left: 80px;
+    flex-direction: left;
+  }
+  .nav-link active
+  {
+    word-spacing: 100px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 1000;
+    font-size: medium;
+    flex-direction:right;
+  }
+  .book-ride
+  {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGmHRBX3yLTdgmrKrqPmFCAV6NFfEGcI8ag&s");
+  }
+  .title
+  {
+    padding-top: 85px;
+    letter-spacing: 2px;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  button
+  {
+    background-color:#f1c40f ;
+    border:none;
+    border-radius:16px;
+    margin:4px 2px;
+    cursor:pointer;
+    font-size:16px;
+    color:white;
+    padding:10px;
+    width:100px;
+  }
+  form
+  {
+    text-align: center;
+    padding-left: 100px;
+  }
+  tr
+  {
+    padding-left: 100px;
+  }
+  td
+  {
+    text-align:center;
+    padding:5px;
+    border-radius: 20px;
+    padding-bottom: 14px;
+  }
+  input
+  {
+    padding:8px;
+    width:200px;
+  }
+  .title
+  {
+    font-size: 45px;
+    padding-bottom: 40px;
+    font-weight: bolder;
+  }
+  .field
+  {
+    border-radius: 7px;
+    width: 520px;
+    padding: 19px;
+    border-color: 1px 1px 1px 1px #d5d8dc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+  }
+  .book
+  {
+    border-radius: 7px;
+    width: 520px;
+    padding: 15px;
+    border-color: 1px 1px 1px 1px #d5d8dc;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+  }
+  .content
+  {
+    padding-top: 80px       ;
+    font-size:50px;
+    margin-left: 200px;
+  }
+  u
+  {
+    text-decoration-color: #f1c40f;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 12px;
+  }
+  .col1
+  {
+    padding-left: 50px;
+  }
+  .row
+  {
+    padding-top: 50px;
+    padding-bottom:40px;
+  }
+  .about
+  {
+    background-color: whitesmoke;
+  }
+  .card
+  {
+    width: 50%;
+    border:none;
+    padding-left: 170px;
+    background-color: whitesmoke;
+  }
+  .card-body
+  {
+    font-size: 35px;
+    padding-top: 30px;
+  }
+  footer
+  {
+    margin-top: 50px;
+    padding-top: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-bottom:40px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container collapse navbar-collapse">
+        <a class="navbar-brand">rapido</a>
+        <a class="nav-link" href="about.html"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:20px; letter-spacing: 0.9px;">About us</a>
+        <a class="nav-link" href="safetyoverview.html"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:20px; letter-spacing: 0.9px;">Safety</a>
+        <a class="nav-link" href="blog.html"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:20px; letter-spacing: 0.9px;">Blog</a>
+        <a class="nav-link" href="#"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:20px; letter-spacing: 0.9px;">Contact us</a>
+      </div>
+    </nav>
+  </header>
+  <section class="ride">
+    <div class="book-ride">
+    <form>
+    <h3 align="center" class="title">Bharat Moves On Rapido!</h3>
+    
+    <table align="center" cellspacing="20px">
+        <tr>
+            <td><input type="email" placeholder="📍 Enter Pickup Location" class="field"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="🏴 Enter Drop Location" class="field"></td>
+        </tr>
+        <tr>
+            <td style="padding-top: 25px; padding-bottom: 70px;"><button onclick="window.location.href='https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606?mt=8';" align="center" type="button" class="book">Book Ride</button></td>
+        </tr>
+    </table>  
+    </form>
+    </div>
+  </section>
+  <section>
+    <h2 class="content"><u>Our</u> Services</h2>
+    <div class="container text-center">
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col1">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/c9bf4e04eeb9f9e5a52c55a143d095c5_1738146120477.webp"width="170px" height="120px" class="vehicle">
+        <h4>Bike</h4>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/baa331808b70d22c33bdcb6e96c3a104_1738146204279.webp"width="170px" height="120px" class="vehicle">
+        <h4>Auto</h4>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/1075eff8297f3213f71cf66b5852ced5_1738146244087.webp"width="170px" height="120px" class="vehicle">
+        <h4>Auto share</h4>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/5e0eec287db4aae2e64b17b9fa04cbe0_1738146281373.webp"width="170px" height="120px" class="vehicle">
+        <h4>Parcel</h4>
+      </div>
+    </div>
+    <div class="col" style="padding-left: 60px;">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/dd03f189ce375502079087fa3688f981_1738146314270.webp"width="170px" height="120px" class="vehicle">
+        <h4>Cab  Economy</h4>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/ed7c8d4653fee97d2cd5c76f00871d72_1738146343883.webp"width="170px" height="120px" class="vehicle">
+        <h4>Cab premium</h4>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section>
+   <div class="about">
+    <h2 class="content" >Get Quick Rides, <br><u>Low</u> Fares</h2>
+    <div class="card" style="overflow: auto;">
+        <div class="card-body">
+            In Rapido we ensure our customers get rides quickly at the most affordable prices.<br>
+            <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606?mt=8" class="nav-link">
+              <button align="center" type="submit" style="color:white;background-color: black;border-radius: 40px; font-size: 35px;padding:10px;width:50%;margin-top:35px">Book a ride</button>
+            </a>
+          </div>
+    </div>
+   </div>
+  </section>
+  <section>
+    <div class="about"style="padding-left:550px;background-color:whitesmoke">
+    <h2 class="content">Flexible Hours &<br><u>High</u> Earnings</h2>
+    <div class="card" style="width:850px;padding-right: 180px;background-color: whitesmoke;">
+        <div class="card-body">
+            Join as a Rapido captain and earn on your own terms. Driver whenever you want.<br>
+            <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606?mt=8" class="nav-link">
+              <button align="center" type="submit" style="color:white;background-color: black;border-radius: 40px; font-size: 35px;padding:10px;width:50%;margin-top:35px">Book a ride</button>
+            </a>
+        </div>
+    </div>
+   </div>
+  </section>
+  <section>
+    <h2 class="content"><u>Saf</u>ety for all</h2>
+    <div class="card" style="background-color: white;">
+        <div class="card-body" style="background-color: white;">
+            At Rapido, your safety is our priority. We’re dedicated to making every ride safe and comfortable.<br>
+        </div>
+        <a href="safetyoverview.html" class="nav-link" style="padding-top: 30px; padding-left: 10px; font-size: xx-large;color: blueviolet;">Know More ></a>
+    </div>
+  </section>
+  <footer>
+    <h2 style="font-size: 50px;">Down<u>load</u> Now</h2>
+    <div class="row justify-content-evenly" style="padding-top:100px;">
+    <div class="col-4" style="padding-right: 100px;">
+        <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606?mt=8" class="navbar-brand" style="padding-top:22px;padding-bottom: 22px; padding-left: 2px; 
+        padding-right: 2px; color:black; font-weight: bold;letter-spacing: 00px;font-size: 23px;">rapido</a><br>
+    </div>
+  </div>
+   <h4 style="padding-bottom: 30px;">Rapido: Bike-Taxi,<br> Auto & Cabs</h4>
+  </footer>
+  <hr>
+  <section>
+  <div style="margin-bottom: 20px; padding-top: 30px;padding-bottom: 30px; text-align: center;word-spacing: 50px;">
+    <a href="https://x.com/rapidobikeapp/with_replies"><img src="https://img.icons8.com/ios-filled/30/twitterx--v1.png" alt="Twitter X" style="margin:10px;"></a>
+    <a href="https://www.youtube.com/channel/UCDrFiyq8m0rLr8SgXiXLqgw"><img src="https://img.icons8.com/ios-filled/30/youtube-play.png" alt="YouTube" style="margin:10px;"></a>
+    <a href="https://www.instagram.com/rapidoapp/?hl=en"><img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram" style="margin:10px;"></a>
+  </div>
+  </section>
+<hr>
+<a class="navbar-brand" style="margin-top: 100px;">rapido</a>
+<div style="display: flex; padding-top: 50px; padding-left: 50px;">
+    <div style="margin-bottom: 10px; text-align: left; padding-left: 100px; padding-top: 50px;">
+        <p style="font-size: 20px;"><a href="home.html"class="nav-link">Home</a></p>
+        <p style="font-size: 20px;"><a href="about.html"class="nav-link">About Us</a></p>
+        <p style="font-size: 20px;"><a href="https://rapido.bike/Careers"class="nav-link">Careers</a></p>
+        <p style="font-size: 20px;"><a href="safetyoverview.html"class="nav-link">Safety</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Blog</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Press</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Privacy Policy</a></p>
+    </div>
+    <div style="margin-bottom: 10px; padding-left: 100px; padding-top: 50px;">
+        <p style="font-size: 20px;"><a href="#" class="nav-link">Customer Terms - Bike Taxi</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Customer Terms - Cabs and Auto</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Corporate Affairs</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Captain Terms - Cabs and Auto</a></p>
+        <p style="font-size: 20px;"><a href="#"class="nav-link">Captain Terms - Cabs and Auto</a></p>
+    </div>
+</div>
+<div class="text-center text-muted py-3" style="font-size: 18px;">
+  © 2025 Rapido Transportation. All rights reserved.
+</div>
+</footer>
+</body>
+</html>
