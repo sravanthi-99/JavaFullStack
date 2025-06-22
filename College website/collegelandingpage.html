@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVIET College Landing Page</title>
+  <style>
+    * 
+    { 
+        margin: 0;
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+    body 
+    {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    header 
+    {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo 
+    {
+      display: flex;
+      align-items: center;
+    }
+    .logo img 
+    {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .logo span 
+    {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav a 
+    {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover 
+    {
+      color: #ffcc00;
+    }
+    .hero 
+    {
+      background: url('https://www.sviet.edu.in/wp-content/uploads/2023/05/2018-06-20.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content 
+    {
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 
+    {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p 
+    {
+      font-size: 1.2rem;
+    }
+    .info-section 
+    {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #f5f5f5;
+    }
+    .info-card 
+    {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .info-card:hover 
+    {
+      transform: translateY(-5px);
+    }
+    .info-card img 
+    {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .info-card h3 
+    {
+      margin: 1rem;
+      font-size: 1.3rem;
+      color: #003366;
+    }
+    .info-card p 
+    {
+      margin: 0 1rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    footer 
+    {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://www.sviet.edu.in/wp-content/uploads/2023/05/SVIET-LOGO-Edited.png" alt="SVIET Logo" />
+      <span>SVIET</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sri Vasavi Institute of Engineering & Technology</h1>
+      <p>Empowering Ideas...</p>
+    </div>
+  </section>
+  <section class="info-section">
+    <div class="info-card" id="about">
+      <img src="https://www.sviet.edu.in/wp-content/uploads/2023/05/svietacheivement-2.jpg" alt="Campus">
+      <h3>About Us</h3>
+      <p>SVIET is a leading institution in Andhra Pradesh offering quality education with top infrastructure, faculty, and placement support.</p>
+    </div>
+
+    <div class="info-card" id="academics">
+      <img src="https://www.sviet.edu.in/wp-content/uploads/2025/03/2025-placements-2-1080x752.jpeg" alt="Academics">
+      <h3>Academics</h3>
+      <p>We provide well-structured undergraduate and postgraduate programs in engineering and management, aligned with industry needs.</p>
+    </div>
+
+    <div class="info-card" id="events">
+      <img src="https://www.sviet.edu.in/wp-content/uploads/2023/06/1682399052_1667985488_D-1170x622.jpg" alt="Events">
+      <h3>Campus Life</h3>
+      <p>Our vibrant campus hosts cultural fests, technical symposiums, workshops, and seminars that shape holistic development.</p>
+    </div>
+  </section>
+  <footer id="contact">
+    <p>&copy; 2025 SVIET | info@sviet.edu.in | Nadamuru, Pedana, Andhra Pradesh</p>
+  </footer>
+
+</body>
+</html>
