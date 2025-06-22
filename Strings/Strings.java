@@ -100,6 +100,37 @@ Output:
 --Indexof--
 3*/
 
+/*6)Matches in regular expressions
+ public class Strings 
+{
+ public static void main(String[] args) 
+ {
+  String s="Sravs";
+  boolean re1=s.matches("[a-zA-Z]+");
+  System.out.println("--Matches--");
+  System.out.println(re1);
+  String s1="918273645a";
+  boolean re2=s1.matches("[0-9]+");
+  System.out.println(re2);
+  String s2="sravsparisegmail.com";
+  boolean re3=s2.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.com");
+  System.out.println(re3);
+  String s3="9876543210";
+  boolean re4=s3.matches("\\d{10}");
+  System.out.println(re4);
+  String s4="23-11-2004";
+  boolean re5=s4.matches("\\d{2}-\\d{2}-\\d{4}");
+  System.out.println(re5);
+ }
+}
+Output:
+--Matches--
+true
+false
+false
+true
+true  */
+
 /*7)Equals
 public class Strings
 {
@@ -214,6 +245,73 @@ Ram
 Nandhu
 Sravs  */
 
+/*12)ValueOf
+public class Strings 
+{
+ public static void main(String[] args) 
+ {
+  int i=10;
+  String s=String.valueOf(i);
+  System.out.println("--Integer to string--");
+  System.out.println(s);
+  float f=45.67f;
+  String s1=String.valueOf(f);
+  System.out.println("--Float to string--");
+  System.out.println(s1);
+  double d=200.62;
+  String s2=String.valueOf(d);
+  System.out.println("--Double to string--");
+  System.out.println(s2);
+  boolean b=true;
+  String s3=String.valueOf(b);
+  System.out.println("--Boolean to string--");
+  System.out.println(s3);
+  char c='s';
+  String s4=String.valueOf(c);
+  System.out.println("--Caracter to string--");
+  System.out.println(s4);
+  System.out.println("--Confirmation--");
+  System.out.println(s+s1+s2+s3+s4);
+ }
+}
+Output:
+--Integer to string--
+10
+--Float to string--
+45.67
+--Double to string--
+200.62
+--Boolean to string--
+true
+--Caracter to string--
+s
+--Confirmation--
+1045.67200.62trues */
+
+/*12)public class Strings 
+{
+ public static void main(String[] args) 
+ {
+  Integer i=23;
+  String s=String.valueOf(i);
+  System.out.println("--valueOf--");
+  System.out.println(s);
+  System.out.println("--toString--");
+  String s1=i.toString();
+  System.out.println(s1);
+  System.out.println("--concatenation--");
+  String s2=i+s1;
+  System.out.println(s2);
+ }
+}
+Output:
+--valueOf--
+23
+--toString--
+23
+--concatenation--
+2323  */
+
 /*14)Upper case, lower case
 public class Strings
 {
@@ -231,3 +329,4 @@ Output:
 SRI RAM
 --toLowerCase--
 sri ram */
+
