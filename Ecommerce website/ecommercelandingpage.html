@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJIO</title>
+  <style>
+   * 
+   {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body 
+    { 
+        background-color: #fff; 
+        color: #333; 
+    }
+    header
+    {
+      background-color: #1c1c1c;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+    .logo 
+    {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav a 
+    {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+    .search-bar 
+    {
+      margin-top: 10px;
+      flex: 1;
+      text-align: center;
+    }
+    .search-bar input 
+    {
+      padding: 8px 12px;
+      width: 60%;
+      max-width: 400px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+    }
+    .carousel 
+    {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+    .slides 
+    {
+      display: flex;
+      height: 100%;
+      animation: slide 12s infinite;
+    }
+    .slide 
+    {
+      width: 100%;
+      flex-shrink: 0;
+      height: 100%;
+    }
+    .slide img 
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes slide 
+    {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+    .categories 
+    {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .categories h2 
+    {
+      margin-bottom: 20px;
+    }
+    .grid 
+    {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .grid img 
+    {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .grid img:hover 
+    {
+      transform: scale(1.05);
+    }
+    .products 
+    {
+      padding: 40px 20px;
+    }
+    .products h2 
+    {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .product-grid
+     {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product 
+    {
+      border: 1px solid #eee;
+      width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .product img 
+    {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product h4 
+    {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .product p 
+    {
+      padding: 0 10px 10px;
+      color: #ff5e00;
+      font-weight: bold;
+    }
+    footer
+    {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AJIO</div>
+    <nav>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Sale</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products..." />
+    </div>
+  </header>
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide">
+        <img src="https://gphome.gumlet.io/promotions/AJIO%20All%20Stars%20Diwali%20Sale.png?w=400&dpr=2.6" alt="Banner 1">
+      </div>
+      <div class="slide">
+        <img src="https://cashlelo.com/wp-content/uploads/2024/11/The-AJIO-Black-Friday-Sale.jpg" alt="Banner 2">
+      </div>
+      <div class="slide">
+        <img src="https://couponswala.com/blog/wp-content/uploads/2021/09/Ajio-Free-Delivery-Coupon.jpg" alt="Banner 3">
+      </div>
+    </div>
+  </div>
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="grid">
+      <img src="https://mercury.akamaized.net/i/ff314c0c491e21d35e0e5dfbd67009f1_328046_0.jpg" alt="Category 1" />
+      <img src="https://assets.ajio.com/cms/AJIO/MOBILE/M-BBS-KHP-1.0-P8-mainbanners-toonyport-bumzee-min50-010625.jpg" alt="Category 2" />
+      <img src="https://mercury.akamaized.net/i/c2695eca9971b6bbd95c2a5891584d50_330215_0.jpg" alt="Category 3" />
+    </div>
+  </section>
+  <section class="products">
+    <h2>Trending Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20250409/CIFk/67f5a1d97a6cd4182fb7111e/red_tape_grey_men_casual_shoes_with_mesh_upper.jpg" alt="Product 1">
+        <h4>Men's Sneakers</h4>
+        <p>₹1,299</p>
+      </div>
+      <div class="product">
+        <img src="https://images-cdn.ubuy.co.in/66560187a825d31ad339baeb-wozhidaose-mens-shoes-mens-casual-shoes.jpg" alt="Product 2">
+        <h4>Casual Shoes</h4>
+        <p>₹1,999</p>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0I8avVSn5v76SYNKnHPD3sIwhns6VG1IbA&s" alt="Product 3">
+        <h4>Women Handbag</h4>
+        <p>₹899</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 AJIO | Designed for Ecommerce Landing page</p>
+  </footer>
+
+</body>
+</html>
